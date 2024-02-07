@@ -37,7 +37,7 @@
 }
 
 /* Changement de couleur quand a:focus */
-.nav-link:active {
+.nav-link:hover {
     color: var(--blue);  
 }
 
@@ -53,7 +53,7 @@
 }
 
 /* Affichage de sélecteur */
-.nav-link:active .nav-selector {
+.nav-link:hover .nav-selector {
     display: block;
 }
 
@@ -61,12 +61,12 @@
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        padding-top: 10%;
+        padding-top: 30px;
     }
 
     .nav-container {
         padding: 0;
-        padding-top: 7.5%;
+        padding-top: 30px;
         width: 100%;
     }
 
@@ -74,11 +74,15 @@
     .nav-list-container {
         position: relative;
         justify-content: space-between;
-        padding: 0 15% 0 10%;
+        padding: 0 60px 0 30px;
     }
 
     .nav-link {
         position: static;
+    }
+
+    .nav-link:active {
+        color: var(--blue);
     }
 
     /* Style version mobile */
