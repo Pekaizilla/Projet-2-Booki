@@ -1,0 +1,102 @@
+/* Layout du <header> */
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ajustement de la taille du logo */
+.nav-logo {
+    max-width: 80px;
+    width: auto;
+    height: auto;
+}
+
+/* Augmente la taille alloué au <nav> */
+.nav-container {
+    flex-grow: 0.1;
+}
+
+/* Layout du <ul> + retrait des styles */
+.nav-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Ajustement des textes des <a> */
+.nav-link {
+    position: relative;
+    font-size: var(--font-size-text);
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Changement de couleur quand a:focus */
+.nav-link:active {
+    color: var(--blue);  
+}
+
+/* Sélecteur bleu pour les <a> */
+.nav-selector {
+    position: absolute;
+    top: -35px;
+    left: -2%;
+    width: 100%;
+    height: 3px;
+    background-color: var(--blue);
+    display: none;
+}
+
+/* Affichage de sélecteur */
+.nav-link:active .nav-selector {
+    display: block;
+}
+
+/* ----- Mobile dimension ----- */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding-top: 10%;
+    }
+
+    .nav-container {
+        padding: 0;
+        padding-top: 7.5%;
+        width: 100%;
+    }
+
+    /* Nouveau point de référence pour le nav-selector */
+    .nav-list-container {
+        position: relative;
+        justify-content: space-between;
+        padding: 0 15% 0 10%;
+    }
+
+    .nav-link {
+        position: static;
+    }
+
+    /* Style version mobile */
+    .nav-selector {
+        display: block;
+        top: 175%;
+        left: 0;
+        width: 50vw;
+        height: 2px;
+        background-color: var(--light-gray);
+    }
+
+    /* Décalage du second nav-selector */
+    .nav-selector-2 {
+        left: 50%;
+    }
+
+    .nav-link:active .nav-selector {
+        background-color: var(--blue);
+    }
+}
