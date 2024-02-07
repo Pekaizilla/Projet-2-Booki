@@ -1,3 +1,5 @@
+@import url(style-header.css);
+
 /* Design System */
 :root {
     /* Colors */
@@ -16,13 +18,26 @@
     --font-size-title: 1.4rem;
     --font-size-subtitle: 1.125rem;
     --font-size-text: 1rem;
-    --font-size-subtext: 0.875rem;
 
     --font-height: normal;
 }
 
 * {
     font-family: var(--font);
+    margin: 0;
+    padding: 0;
 }
 
-
+/* Centre et limite les dimension du conteneur */
+.main-container {
+    max-width: 1440px;
+    min-width: 320px; 
+    margin: 0 auto;   
+    padding: 30px;    
+}
+/* ----- Mobile dimension ----- */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 0;
+    }
+}
