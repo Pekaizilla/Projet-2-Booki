@@ -42,7 +42,7 @@
 /* ----- Mobile dimension ----- */
 @media (max-width: 768px) {
     .search-input {
-        max-width: none;
+        max-width: 75%;
         padding-left: 25px;
         text-align: start;
         flex-grow: 1;
