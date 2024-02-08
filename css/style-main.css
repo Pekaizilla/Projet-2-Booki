@@ -1,8 +1,5 @@
 @import url(style-search.css);
-
-.main {
-    margin: 50px 0 50px 0;
-}
+@import url(style-filter.css);
 
 .section-title {
     font-size: var(--font-size-title);
@@ -19,16 +16,55 @@
     font-weight: var(--font-weight-regular);
 }
 
+.section-text-bold {
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-bold);
+
+}
+
+.section {
+    margin: 40px 0 20px 0;
+}
+
 .headline {
-    margin: 30px 0 40px 0;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-icon-holder {
+    padding-inline: 7.5px;
+    border: 2px solid var(--light-gray);
+    border-radius: 50%;
+}
+
+.blue-icon {
+    color: var(--blue);
 }
 
 /* ----- Mobile dimension ----- */
 @media (max-width: 768px) {
     .main {
         padding: 0 20px 0 20px;
+    }
+
+    .section-text {
+        font-size: var(--font-size-subtext);
+    }
+
+    .section-text-bold {
+        font-size: var(--font-size-subtext);
+    }
+
+    .headline {
+        margin-top: 50px;
     }
 }
