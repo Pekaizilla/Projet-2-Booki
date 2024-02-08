@@ -37,12 +37,12 @@
 
         </header>
         <main class="main">
-            <div class="headline">
+            <div class="section headline">
                 <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="section-text">En plein centre ville ou en pleine nature</p>
             </div>
             <div>
-                <section>
+                <section class="section">
                     <form class="search-container" action="" method="">
                         <label for="location" class="search-icon-holder">
                             <i class="fa-solid fa-location-dot fa-lg"></i>
@@ -54,11 +54,38 @@
                         </button>
                     </form>
                 </section>
-                <section id="filter">
-
+                <section class="section">
+                    <form class="filter-container" action="" method="">
+                        <label class="section-subtitle">Filtres</label>
+                        <div class="filter-radio-container">
+                            <label class="filter-radio-label section-text-bold">
+                                <input class="filter-radio-button" type="radio" name="filter">
+                                <i class="fa-solid fa-money-bill-wave blue-icon"></i>
+                                Économique
+                            </label>
+                            <label class="filter-radio-label section-text-bold">
+                                <input class="filter-radio-button" type="radio" name="filter">
+                                <i class="fa-solid fa-person blue-icon"></i>
+                                Familial
+                            </label>
+                            <label class="filter-radio-label section-text-bold">
+                                <input class="filter-radio-button" type="radio" name="filter">
+                                <i class="fa-solid fa-heart blue-icon"></i>
+                                Romantique
+                            </label>
+                            <label class="filter-radio-label section-text-bold">
+                                <input class="filter-radio-button" type="radio" name="filter">
+                                <i class="fa-solid fa-fire blue-icon"></i>
+                                Nos pépites
+                            </label>
+                        </div>
+                    </form>
                 </section>
-                <div>
-
+                <div class="section info-container">
+                    <div class="info-icon-holder">
+                        <i class="fa-solid fa-info fa-xs blue-icon"></i>
+                    </div>
+                    <p class="section-text">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>
             <div id="hosting-and-popular">
