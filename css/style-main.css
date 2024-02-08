@@ -1,0 +1,28 @@
+@import url(style-headline.css);
+
+.main {
+    margin-top: 50px;
+}
+
+.section-title {
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-bold);
+}
+
+.section-text {
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-regular);
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ----- Mobile dimension ----- */
+@media (max-width: 768px) {
+    .main {
+        padding: 0 20px 0 20px;
+    }
+}
