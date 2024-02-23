@@ -248,7 +248,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(65% - 90px);
+    width: calc(70% - 90px);
     background-color: var(--light-gray);
     border-radius: 25px;
     padding: 30px;
@@ -322,7 +322,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(32vw - 60px);
+    width: calc(30% - 60px);
     background-color: var(--light-gray);
     border-radius: 25px;
     padding: 30px;
@@ -560,7 +560,7 @@
     .nav-list-container {
         position: relative;
         justify-content: space-between;
-        padding: 0 60px 0 30px;
+        padding: 0 10%;
     }
 
     .nav-link {
@@ -605,8 +605,20 @@
         padding: 0 20px;
     }
 
+    .section-title {
+        font-size: clamp(1.3rem, 0.9429rem + 1.7857vw, 1.8rem);
+    }
+
+    .section-subtitle {
+        font-size: clamp(1.1rem, 0.7429rem + 1.7857vw, 1.6rem);
+    }
+
     .section-text-bold {
-        font-size: var(--font-size-subtext);
+        font-size: clamp(1.3rem, 1.1571rem + 0.7143vw, 1.5rem);
+    }
+
+    .section-text {
+        font-size: clamp(1.3rem, 1.1571rem + 0.7143vw, 1.5rem);
     }
 
     /* ----- Search Class ----- */
