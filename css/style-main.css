@@ -1,5 +1,4 @@
-@import url(style-search.css);
-@import url(style-filter.css);
+@import url(style-activities.css);
 
 .section-title {
     font-size: var(--font-size-title);
@@ -50,18 +49,25 @@
     color: var(--blue);
 }
 
-/* ----- Mobile dimension ----- */
-@media (max-width: 768px) {
-    .main {
-        padding: 0 20px 0 20px;
-    }
+.gray-icon {
+    color: var(--light-gray);
+}
 
+/* ----- Tablet dimension ----- */
+@media (max-width: 1024px) {
     .section-text {
         font-size: var(--font-size-subtext);
     }
 
     .section-text-bold {
         font-size: var(--font-size-subtext);
+    }
+}
+
+/* ----- Mobile dimension ----- */
+@media (max-width: 768px) {
+    .main {
+        padding: 0 20px 0 20px;
     }
 
     .headline {

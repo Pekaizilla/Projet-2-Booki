@@ -92,10 +92,3 @@
         padding: 5px;
     }
 }
-
-/* ----- Mobile dimension ----- */
-@media (max-width: 768px) {
-    .main-container {
-        padding: 0;
-    }
-}
