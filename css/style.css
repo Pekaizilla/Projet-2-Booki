@@ -422,15 +422,15 @@
 }
 
 .activities-card .card-image {
-    min-height: 75%;
-    max-height: 75%;
+    min-height: 87%;
+    max-height: 87%;
 }
 
 .activities-card .card-content {
     padding: 20px;
     box-sizing: border-box;
     width: 100%;
-    height: 25%;
+    height: 13%;
     white-space: normal;
     display: flex;
     align-items: center;
@@ -516,7 +516,7 @@
         height: 100%;
         width: calc(33% - 20px);
         margin-bottom: 0px;
-        min-height: none;
+        min-height: unset;
     }
 
     .popular-card {
@@ -531,6 +531,15 @@
     /* ----- Activities Class ----- */
     .activities-card-link {
         aspect-ratio: 0.7/1;
+    }
+
+    .activities-card .card-image {
+        max-height: 75%;
+        min-height: 75%;
+    }
+
+    .activities-card .card-content {
+        height: 25%;
     }
 
 /* ---------- Footer Tablet Style ---------- */
@@ -685,7 +694,7 @@
         aspect-ratio: 2.3/1;
         width: 100%;
         height: auto;
-        min-height: none;
+        min-height: unset;
     }
 
     .popular-card .card-content {
