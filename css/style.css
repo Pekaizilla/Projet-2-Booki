@@ -467,7 +467,7 @@
 }
 
 /* ----- Tablet dimension ----- */
-@media (width > 768px) and (width <= 1024px) {
+@media (width >= 768px) and (width < 1024px) {
 /* ---------- Body Tablet Style ---------- */
 
 /* ---------- Header Tablet Style ---------- */
@@ -546,7 +546,7 @@
 }
 
 /* ----- Mobile dimension ----- */
-@media (width <= 768px) {
+@media (width < 768px) {
 /* ---------- Body Mobile Style ---------- */
     .main-container {
         padding: 0;
