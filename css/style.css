@@ -100,6 +100,7 @@
 
 /* ---------- Main Style ---------- */
 /* ----- General Class ----- */
+/* Définition des classes pour la taille et le poids des polices */
 .section-title {
     font-size: var(--font-size-title);
     font-weight: var(--font-weight-bold);
@@ -121,10 +122,13 @@
 
 }
 
+/* Définition des marges pour les sections */
 .section {
     margin: 40px 0 20px 0;
 }
 
+
+/* Définition du layout */
 .headline-container {
     margin-top: 70px;
     display: flex;
@@ -132,6 +136,7 @@
     gap: 10px;
 }
 
+/* Définition du layout */
 .info-container {
     display: flex;
     flex-direction: row;
@@ -139,21 +144,26 @@
     gap: 10px;
 }
 
+/* Définition de l'icône d'information */
 .info-icon-holder {
     padding-inline: 7.5px;
     border: 2px solid var(--light-gray);
     border-radius: 50%;
 }
 
+/* Définition de la couleur des icônes bleues */
 .blue-icon {
     color: var(--blue);
 }
 
+/* Définition de la couleur des icônes gris */
 .gray-icon {
     color: var(--light-gray);
 }
 
 /* ----- Search Class ----- */
+/* Définition du layout */
+
 .search-container {
     display: flex;
     flex-flow: row nowrap;
@@ -168,6 +178,7 @@
 
 .search-input {
     padding: 13px 0px;
+    height: 49px;
     border: none;
     border-top: 1px solid var(--light-gray);
     border-bottom: 1px solid var(--light-gray);
@@ -595,7 +606,7 @@
         left: 50%;
     }
 
-    .nav-link:active .nav-selector {
+    .nav-link:hover .nav-selector {
         background-color: var(--blue);
     }
 
@@ -606,12 +617,12 @@
     }
 
     .headline-container {
-        padding: 0 20px;
+        padding: 0 15px;
         margin-top: 50px;
     }
 
     .form-container {
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
     .section-title {
@@ -623,16 +634,18 @@
     }
 
     .section-text-bold {
-        font-size: clamp(1.3rem, 1.1571rem + 0.7143vw, 1.5rem);
+        font-size: clamp(0.9rem, 0.4714rem + 2.1429vw, 1.5rem);
     }
 
     .section-text {
-        font-size: clamp(1.3rem, 1.1571rem + 0.7143vw, 1.5rem);
+        font-size: clamp(0.9rem, 0.4714rem + 2.1429vw, 1.5rem);
     }
 
     /* ----- Search Class ----- */
     .search-input {
-        max-width: 75%;
+        max-width: none;
+        min-width: 100px;
+        width: calc(100vw - 40px - 49px - 26px);
         padding-left: 25px;
         text-align: start;
         flex-grow: 1;
@@ -649,8 +662,8 @@
     /* ----- Filter Class ----- */
     .filter-radio-label {
         width: calc(50% - 40px - 15px);
-        height: 20px;
-        font-size: var(--font-size-subtext);
+        height: 25px;
+        gap: 8px;
         white-space: nowrap;
     }
 
