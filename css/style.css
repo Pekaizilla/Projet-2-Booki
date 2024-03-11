@@ -215,13 +215,13 @@
     gap: 15px;
 }
 
-.filter-radio-container {
+.filter-label-container {
     display: flex;
     flex-flow: row wrap;
     gap: 15px;
 }
 
-.filter-radio-label {
+.filter-label {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -232,18 +232,14 @@
     border: 2px solid var(--gray);
 }
 
-.filter-radio-label:hover {
+.filter-label:hover {
     background-color: var(--blue-hover);
 }
 
-.filter-radio-button {
+.filter-button {
     position: fixed;
     opacity: 0;
     pointer-events: none;
-}
-
-.filter-radio-label:has(> .filter-radio-button:checked) {
-    background-color: var(--blue-hover);
 }
 
 /* ----- Hosting Class ----- */
@@ -660,7 +656,7 @@
     }
 
     /* ----- Filter Class ----- */
-    .filter-radio-label {
+    .filter-label {
         width: calc(50% - 40px - 15px);
         height: 25px;
         gap: 8px;
